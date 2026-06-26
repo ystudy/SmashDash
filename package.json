@@ -1,0 +1,23 @@
+{
+  "name": "smash-dash",
+  "version": "1.0.0",
+  "description": "Self-hosted, in-app-configured dashboard for servers and links. No YAML.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/cookie": "^9.3.1",
+    "@fastify/static": "^7.0.4",
+    "@tabler/icons-webfont": "^3.17.0",
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^12.2.0",
+    "fastify": "^4.28.1"
+  }
+}

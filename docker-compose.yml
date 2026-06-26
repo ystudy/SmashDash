@@ -1,0 +1,20 @@
+services:
+  smashdash:
+    build: .
+    image: smashdash:latest
+    container_name: smashdash
+    ports:
+      - "3000:3000"
+    volumes:
+      - smashdash-data:/data
+    environment:
+      # Change these before first run — the admin user is created on first boot only.
+      - ADMIN_USERNAME=admin
+      - ADMIN_PASSWORD=admin
+      # Set to "true" when serving over HTTPS (behind a reverse proxy).
+      - COOKIE_SECURE=false
+      - TZ=America/Chicago
+    restart: unless-stopped
+
+volumes:
+  smashdash-data:
