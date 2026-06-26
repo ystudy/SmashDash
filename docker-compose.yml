@@ -13,7 +13,8 @@ services:
       - ADMIN_PASSWORD=admin
       # Set to "true" when serving over HTTPS (behind a reverse proxy).
       - COOKIE_SECURE=false
-      - TZ=America/Chicago
+      # Set to your timezone, e.g. America/New_York or Europe/London.
+      - TZ=UTC
     restart: unless-stopped
 
 volumes:

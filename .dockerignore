@@ -7,3 +7,8 @@ data
 .gitignore
 .env
 npm-debug.log*
+docs
+NOTES.md
+.claude
+.vscode
+.github
